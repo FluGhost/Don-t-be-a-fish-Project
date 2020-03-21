@@ -1,0 +1,2 @@
+<?php
+require("indexView.php");
