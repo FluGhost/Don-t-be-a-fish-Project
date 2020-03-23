@@ -11,11 +11,17 @@
             <h1>Don't Be A Fish !</h1>
             <nav>
                 <ul>
-                    <li><a href="">Commencer Maintenant.</a></li>
-                    <li><a href="">Me contacter/Qui suis-je ?</a></li>
-                    <li><a href="https://github.com/FluGhost/Don-t-be-a-fish-Project" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" alt="GitHub logo"> GitHub Repository</a></li>
+                    <li><?php echo $nav1; ?></li>
+                    <li><?php echo $nav2; ?></li>
+                    <li><?php echo $nav3; ?></li>
                 </ul>
             </nav>
         </header>
+        <div class="body-main">
+            <?php echo $body_main_content; ?>
+        </div>
+        <footer>
+            <?php echo $footer_content; ?>
+        </footer>
     </body>
 </html>

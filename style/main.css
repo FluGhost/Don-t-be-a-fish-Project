@@ -11,9 +11,14 @@ header{
     align-items: center;
     padding: 22px;
     width: 100%;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
+header nav{
+    margin-right: 2%;
+}
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -39,4 +44,73 @@ header nav li img{
 
 header h1{
     margin: 0;
+}
+
+.citation-inline{
+    color: black;
+    display: inline;
+    background-color: yellow;
+    border-radius: 3px;
+    border: none;
+    padding: 1px;
+    font-style: italic;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.warn-section{
+    background-color: wheat;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    border: red 7px dashed;
+    display: block;
+    width: auto;
+}
+.warn-section h3{
+    color: red;
+    margin: 0;
+}
+.warn-section p{
+    margin: 10px 0 0 0;
+}
+
+.body-main{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.2em;
+}
+
+.button{
+    border: orangered 2px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+}
+.button:hover{
+    transition: 0.2s;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    width: 110px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
